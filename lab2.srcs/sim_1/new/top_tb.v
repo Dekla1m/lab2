@@ -177,8 +177,6 @@ initial begin
     $dumpvars(0, top_tb);
     
     // Инициализация
-    PS2_dat = 1;
-    btn_reset = 0;
     
     // Сброс системы
     #50;
