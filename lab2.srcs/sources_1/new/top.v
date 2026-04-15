@@ -19,6 +19,7 @@ module top(
 wire reset_filtered;
 FilterDreb u_filter (
     .CLK(clk),
+    .CLOCK_ENABLE(1'b1),  // Р’СЃРµРіРґР° РІРєР»СЋС‡РµРЅ
     .IN_SIGNAL(btn_reset),
     .OUT_SIGNAL(reset_filtered) // ?? Проверь имя порта в твоём FilterDreb (может быть btn_out)
 );
